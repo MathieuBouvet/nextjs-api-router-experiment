@@ -7,6 +7,7 @@ anotherRouter
     console.log("router middleware");
     return next();
   })
+  .delete("/", () => "root")
   .get("/hello/me", () => {
     return "test order";
   })
